@@ -2,15 +2,15 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #0f172a;
-  color: #f8fafc;
+  color: #f1f5f9;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #1e293b;
   padding: 1rem 2rem;
+  align-items: center;
 }
 
 .logo {
@@ -29,8 +29,8 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #f8fafc;
-  transition: color 0.3s;
+  color: #f1f5f9;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -43,19 +43,17 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.subtitle {
-  color: #94a3b8;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.highlight {
+  color: #38bdf8;
 }
 
 .footer {
-  margin-top: 4rem;
-  padding: 1rem;
   text-align: center;
-  color: #64748b;
+  padding: 1rem;
+  margin-top: 3rem;
+  color: #94a3b8;
   font-size: 0.9rem;
 }
