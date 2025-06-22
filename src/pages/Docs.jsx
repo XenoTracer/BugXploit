@@ -1,4 +1,3 @@
-import React from 'react';
 export default function Docs() {
-  return <div className='p-4 text-white'>Documentation & Writeups – Coming soon</div>;
+  return <h1 className='text-xl'>Documentation – Coming Soon</h1>;
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 export default function Recon() {
-  return <div className='p-4 text-white'>Recon Module (Subdomains, Services, etc.) – Coming soon</div>;
+  return <h1 className='text-xl'>Recon Page – Coming Soon</h1>;
 }
