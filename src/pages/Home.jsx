@@ -1,3 +1,8 @@
 export default function Home() {
-  return <h1 className='text-xl'>Welcome to BugXploit – Input a target to begin your scan.</h1>;
+  return (
+    <div>
+      <h1 className="text-2xl font-bold mb-4">Welcome to BugXploit</h1>
+      <p className="text-lg">Input a target URL or IP to begin scanning.</p>
+    </div>
+  );
 }
