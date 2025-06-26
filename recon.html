@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BugXploit – Recon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/recon.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🐞 BugXploit</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recon.html">Recon</a></li>
+      <li><a href="cve.html">CVE Lookup</a></li>
+      <li><a href="docs.html">Docs</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>🔍 Recon Module</h1>
+    <p>Enter a domain or IP address to begin passive and active recon.</p>
+
+    <form id="reconForm">
+      <input type="text" id="targetInput" placeholder="Enter URL or IP" required />
+      <button type="submit">Start Scan</button>
+    </form>
+
+    <div id="reconResult" class="results-box"></div>
+  </main>
+
+  <footer class="footer">© 2025 BugXploit • Built by Xenotracer</footer>
+</body>
+</html>
