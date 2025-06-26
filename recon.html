@@ -8,16 +8,18 @@
   <script defer src="js/script.js"></script>
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">🐞 BugXploit</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="recon.html">Recon</a></li>
+      <li><a href="recon.html" class="active">Recon</a></li>
       <li><a href="cve.html">CVE Lookup</a></li>
       <li><a href="docs.html">Docs</a></li>
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <main class="container">
     <h1>🔍 Recon Module</h1>
     <p>Enter a domain or IP address to begin passive and active recon.</p>
@@ -27,9 +29,25 @@
       <button type="submit">Start Scan</button>
     </form>
 
-    <div id="reconResult" class="results-box"></div>
+    <!-- Result Container -->
+    <div id="reconResult" class="results-box">
+      <!-- Results will appear here -->
+      <div id="resultContainer" class="result-card" style="display: none;">
+        <p style="color: #90ee90; font-weight: bold;">✅ Subdomains:</p>
+        <pre id="subdomains" class="code-block"></pre>
+
+        <p style="color: #87cefa; font-weight: bold; margin-top: 10px;">📡 Nmap Result:</p>
+        <pre id="nmapResult" class="code-block"></pre>
+      </div>
+    </div>
   </main>
 
+  <!-- Fallback for JS disabled -->
+  <noscript>
+    <p style="color: red; text-align: center;">Please enable JavaScript to use the Recon Module.</p>
+  </noscript>
+
+  <!-- Footer -->
   <footer class="footer">© 2025 BugXploit • Built by Xenotracer</footer>
 </body>
 </html>
