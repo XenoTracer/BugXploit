@@ -6,6 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/recon.css" />
   <script defer src="js/script.js"></script>
+  <style>
+    .result-card {
+      background-color: #1e1e2f;
+      color: #f0f0f0;
+      border: 1px solid #3a3a5c;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: none;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -19,35 +38,26 @@
     </ul>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Main Section -->
   <main class="container">
     <h1>🔍 Recon Module</h1>
-    <p>Enter a domain or IP address to begin passive and active recon.</p>
+    <p>Enter a domain or IP address to begin passive recon.</p>
 
     <form id="reconForm">
       <input type="text" id="targetInput" placeholder="Enter URL or IP" required />
       <button type="submit">Start Scan</button>
     </form>
 
-    <!-- Result Container -->
-    <div id="reconResult" class="results-box">
-      <!-- Results will appear here -->
-      <div id="resultContainer" class="result-card" style="display: none;">
-        <p style="color: #90ee90; font-weight: bold;">✅ Subdomains:</p>
-        <pre id="subdomains" class="code-block"></pre>
+    <!-- Results Container -->
+    <div id="resultCard" class="result-card">
+      <p><strong>✅ Subdomains:</strong></p>
+      <pre id="subdomains">Loading...</pre>
 
-        <p style="color: #87cefa; font-weight: bold; margin-top: 10px;">📡 Nmap Result:</p>
-        <pre id="nmapResult" class="code-block"></pre>
-      </div>
+      <p><strong>📡 Nmap Result:</strong></p>
+      <pre id="nmapResult">Loading...</pre>
     </div>
   </main>
 
-  <!-- Fallback for JS disabled -->
-  <noscript>
-    <p style="color: red; text-align: center;">Please enable JavaScript to use the Recon Module.</p>
-  </noscript>
-
-  <!-- Footer -->
   <footer class="footer">© 2025 BugXploit • Built by Xenotracer</footer>
 </body>
 </html>
